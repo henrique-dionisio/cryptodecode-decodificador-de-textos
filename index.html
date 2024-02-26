@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/style.css">
+        <title>CryptoDecode</title>
+    </head>
+
+    <body>
+        <main>
+            <div id="titleAndLogo">
+                <img src="./assets/logo.png" class="logo">
+                <h1 class="title">Crypto<span class="partTitle">Decode</span></h1>
+            </div>
+
+            <div id="textAreaAndButtons">
+                <textarea class="text-area" placeholder="Digite seu texto..."></textarea>
+
+                <p class="aviso"><img src="./assets/exclamation.png">Apenas letras minúsculas e sem acento.</p>
+
+                <div class="buttons">
+                    <button onclick="criptografar()" class="button1">Criptografar</button>
+                    <button onclick="descriptografar()" class="button2">Descriptografar</button>
+                </div>
+            </div>
+
+            <div>
+                <textarea class="result-area" placeholder="Sua mensagem criptografada aparecerá aqui!"></textarea>
+            </div>
+
+        </main>
+        <script src="./script/app.js"></script>
+    </body>
+</html>
