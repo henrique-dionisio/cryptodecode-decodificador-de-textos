@@ -38,7 +38,7 @@ body {
 }
 
 .text-area {
-    width: 600px;
+    width: 40%;
     height: 450px;
     background-color: #F3F5FC;
     color: #279931;
@@ -63,6 +63,25 @@ body {
 
 .text-area:hover {
     border: 1.5px solid #38D94E;
+}
+
+.button-limpar {
+    width: 4rem;
+    height: 1.8rem;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    border-color: white;
+    float: left;
+    position: relative;
+    margin-left: 490px;
+    margin-top: -95px;
+    box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid #279931;
+}
+
+.button-limpar:hover {
+    background-color: #dadee4;
 }
 
 .aviso {
@@ -114,8 +133,8 @@ body {
 }
 
 .result-area {
-    width: 420px;
-    height: 670px;
+    width: 30%;
+    height: 660px;
     font-size: 16px;
     font-family:"Roboto Mono", monospace;
     color: #8234c4;
@@ -125,7 +144,7 @@ body {
     float: right;
     position: relative;
     margin-right: 100px;
-    margin-top: -682px;
+    margin-top: -672px;
     padding-top: 20px;
     padding-left: 20px;
     border-radius: 20px;
@@ -146,6 +165,26 @@ body {
 
 .result-area:focus {
     background: white;
+}
+
+#btnCopiar {
+    width: 4rem;
+    height: 1.8rem;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    float: right;
+    position: relative;
+    margin: auto;
+    margin-right: 290px;
+    margin-top: -50px;
+    border: 1px solid #9857E8;
+    box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+#btnCopiar:hover {
+    background-color: #dadee4;
+    border: 1px solid #8234c4;
 }
 
 
@@ -178,6 +217,11 @@ body {
         height: 450px;
     }
 
+    .button-limpar {
+        margin: auto;
+        margin-top: -100px;
+    }
+
     .aviso {
         margin: auto;
         margin-top: -15px;
@@ -195,6 +239,12 @@ body {
         margin: auto;
         width: 75%;
         height: 450px;
+    }
+
+    #btnCopiar {
+        margin: auto;
+        margin-right: 270px;
+        margin-top: -70px;
     }
 }
 
@@ -220,6 +270,11 @@ body {
 
     .aviso {
         font-size: 0.9rem;
+    }
+
+    #btnCopiar {
+        margin-right: 200px;
+        margin-top: -60px;
     }
 }
 
@@ -284,6 +339,10 @@ body {
 
     .aviso {
         font-size: 0.7rem;
+    }
+
+    #btnCopiar {
+        margin-right: 100px;
     }
 }
 

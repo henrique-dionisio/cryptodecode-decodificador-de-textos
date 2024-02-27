@@ -13,17 +13,36 @@ function descriptografar() {
 }
 
 function criptografarMensagem(mensagem) {
-    return mensagem.replace(/e/g, 'enter')
-                   .replace(/i/g, 'imes')
+    return mensagem.replace(/e/g, 'etr')
+                   .replace(/i/g, 'ime')
                    .replace(/a/g, 'ai')
-                   .replace(/o/g, 'ober')
-                   .replace(/u/g, 'ufat');
+                   .replace(/o/g, 'obe')
+                   .replace(/u/g, 'fat');                 
 }
 
 function descriptografarMensagem(mensagemCriptografada) {
-    return mensagemCriptografada.replace(/ufat/g, 'u')
-                               .replace(/ober/g, 'o')
-                               .replace(/ai/g, 'a')
-                               .replace(/imes/g, 'i')
-                               .replace(/enter/g, 'e');
+    return mensagemCriptografada.replace(/etr/g, 'e')
+                                .replace(/ime/g, 'i')
+                                .replace(/ai/g, 'a')
+                                .replace(/obe/g, 'o')
+                                .replace(/fat/g, 'u');              
+
 }
+
+document.getElementById('btnCopiar').addEventListener('click', function () {
+    copiarTexto();
+});
+
+function copiarTexto() {
+    let resultado = document.querySelector('.result-area');
+    resultado.select();
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+    alert('Texto copiado!');
+}
+
+function limparTexto() {
+    document.querySelector('.text-area').value = '';
+}
+
+
